@@ -1,0 +1,113 @@
+
+/* ------ Start of Header Section ------ */
+
+.container-header {
+    display: flex;
+    align-items: center; 
+    background-color: rgb(168, 27, 27);
+    margin-bottom: 0;
+}
+
+.link-container-header {
+    flex-grow: 1; 
+    display: flex; 
+    justify-content: center;
+}
+
+.signin-container-header {
+    margin-right: 5px;
+}
+
+.signin-container-header img {
+    width: auto; 
+    height: 60px
+}
+
+.container-header .logo {
+    margin-left: 2px; 
+    width:75px; 
+    height: 60px; 
+    cursor: pointer;
+}
+
+.container-header .webpage a {
+    color: white; 
+    font-size:25px; 
+    font-weight: 100;
+    text-align: center; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 40px;
+    text-decoration: none; 
+    position: relative;
+}
+
+.container-header .webpage a::after {
+    content: ''; 
+    height: 3.5px; 
+    width: 0;
+    background: goldenrod;
+    position: absolute; 
+    left: 0; 
+    bottom: -8px; 
+    transition: 0.5s;
+}
+
+.container-header .webpage a:hover::after {width: 100%;}
+
+/* ------ End of Header Section ------ */
+
+
+/* ------ Start of Cover Page Section ------ */
+
+.cover-page-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    position: relative;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.cover_page_background {
+    height: 98vh; 
+    width: 100%; 
+    object-fit: cover; 
+    opacity: 80%;
+    margin-top: 0px;
+}
+
+.text-overlay {
+    position: absolute; 
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    align-items: center;
+    color: white;
+    width: 90%;
+    text-shadow: 0 0 2px black;
+}
+
+.text-overlay h1 {
+    font-size: 130px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.text-overlay h1 span {
+    color: rgb(218, 32, 100);
+}
+
+.text-overlay p {
+    position: absolute;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    font-weight: 400;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+/* ------ End of Cover Page Section ------ */

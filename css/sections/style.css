@@ -1,0 +1,24 @@
+@import url("header.css");
+@import url("service.css");
+@import url("mission.css");
+@import url("review.css");
+@import url("footer.css");
+@import url("mission_vision.css");
+
+
+:root {
+    --primary-color: deeppink;
+    --white-color: #ffffff;
+    --light-color: #ced6e0;
+    --dark-color: #2f3542;
+    --box-shadow: rgb(0 0 2 / 35%) 0px 20px 30px -10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+

@@ -1,0 +1,90 @@
+#section4 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(246, 249, 246);
+}
+
+
+.mvv-container {
+    max-width: 90%;
+    margin: 50px auto 0;
+}
+
+.mvv-container .mvv-block {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mvv-container .mvv-block .image {
+    flex: 0 0 auto;
+    width: 400px;
+}
+
+#right {
+    text-align: right;
+}
+
+.mvv-container .mvv-block .image img {
+    width: 60%;
+    border-radius: 5px;
+    /*box-shadow: 0 0 10px 5px rgba(29, 28, 28, 0.5);*/
+    transition: .3s;
+    transform: scale(1); 
+}
+
+.mvv-container .mvv-block .image:hover img {
+    transform: scale(1.08);
+}
+
+.mvv-container .mvv-block .content {
+    flex: 0 5px auto;
+    width: calc(100% - 400px);
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.mvv-container .mvv-block .content h5 {
+    font-weight: 700;
+    line-height: 35px;
+    font-size: 35px;
+    color: deeppink;
+    margin-bottom: 15px;    
+}
+
+.mvv-container .mvv-block .content .vision {
+    color: blue;
+}
+
+
+.mvv-container .mvv-block .content p {
+    font-size: 20px;
+    margin-bottom: 0px;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .mvv-container .mvv-block:nth-child(odd) .image {
+        order: 1;
+    }
+    .mvv-container .mvv-block:nth-child(even) .image {
+        order: 2;
+    }
+    .mvv-container .mvv-block:nth-child(odd) .content {
+        order: 2;
+        padding-left: 30px;
+    }
+    .mvv-container .mvv-block:nth-child(even) .content {
+        order: 1;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mvv-container .mvv-block {
+        display: grid;
+        align-items: center;
+    }
+}
